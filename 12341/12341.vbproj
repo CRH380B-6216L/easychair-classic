@@ -1,0 +1,395 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A8AB6772-9484-4D49-A66D-BD8B26CD05A1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>EasyChairNew.My.MyApplication</StartupObject>
+    <RootNamespace>EasyChairNew</RootNamespace>
+    <AssemblyName>中文会</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>中文会.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>中文会.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>crashdump.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox1.Designer.vb">
+      <DependentUpon>AboutBox1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AboutBox1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="award.Designer.vb">
+      <DependentUpon>award.vb</DependentUpon>
+    </Compile>
+    <Compile Include="award.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cabinet.Designer.vb">
+      <DependentUpon>cabinet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="cabinet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="changetime.Designer.vb">
+      <DependentUpon>changetime.vb</DependentUpon>
+    </Compile>
+    <Compile Include="changetime.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="clear.Designer.vb">
+      <DependentUpon>clear.vb</DependentUpon>
+    </Compile>
+    <Compile Include="clear.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="crisis.Designer.vb">
+      <DependentUpon>crisis.vb</DependentUpon>
+    </Compile>
+    <Compile Include="crisis.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="custom.Designer.vb">
+      <DependentUpon>custom.vb</DependentUpon>
+    </Compile>
+    <Compile Include="custom.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog1.Designer.vb">
+      <DependentUpon>Dialog1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="roll.Designer.vb">
+      <DependentUpon>roll.vb</DependentUpon>
+    </Compile>
+    <Compile Include="roll.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="enddeb.Designer.vb">
+      <DependentUpon>enddeb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="enddeb.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="filesvb.Designer.vb">
+      <DependentUpon>filesvb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="filesvb.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loadnsave.vb" />
+    <Compile Include="mc.Designer.vb">
+      <DependentUpon>mc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="mc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="recview.Designer.vb">
+      <DependentUpon>recview.vb</DependentUpon>
+    </Compile>
+    <Compile Include="recview.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="speaker.Designer.vb">
+      <DependentUpon>speaker.vb</DependentUpon>
+    </Compile>
+    <Compile Include="speaker.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen1.Designer.vb">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="suspend.Designer.vb">
+      <DependentUpon>suspend.vb</DependentUpon>
+    </Compile>
+    <Compile Include="suspend.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="topicsel.Designer.vb">
+      <DependentUpon>topicsel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="topicsel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="umc.Designer.vb">
+      <DependentUpon>umc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="umc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="votctrl.Designer.vb">
+      <DependentUpon>votctrl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="votctrl.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="votego.Designer.vb">
+      <DependentUpon>votego.vb</DependentUpon>
+    </Compile>
+    <Compile Include="votego.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="voting.Designer.vb">
+      <DependentUpon>voting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="voting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="welcome.Designer.vb">
+      <DependentUpon>welcome.vb</DependentUpon>
+    </Compile>
+    <Compile Include="welcome.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yield.Designer.vb">
+      <DependentUpon>yield.vb</DependentUpon>
+    </Compile>
+    <Compile Include="yield.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AboutBox1.resx">
+      <DependentUpon>AboutBox1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="award.resx">
+      <DependentUpon>award.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cabinet.resx">
+      <DependentUpon>cabinet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="changetime.resx">
+      <DependentUpon>changetime.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="clear.resx">
+      <DependentUpon>clear.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crisis.resx">
+      <DependentUpon>crisis.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="custom.resx">
+      <DependentUpon>custom.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog1.resx">
+      <DependentUpon>Dialog1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="roll.resx">
+      <DependentUpon>roll.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="enddeb.resx">
+      <DependentUpon>enddeb.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="filesvb.resx">
+      <DependentUpon>filesvb.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.zh-Hans.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mc.resx">
+      <DependentUpon>mc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="recview.resx">
+      <DependentUpon>recview.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="speaker.resx">
+      <DependentUpon>speaker.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen1.resx">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="suspend.resx">
+      <DependentUpon>suspend.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="topicsel.resx">
+      <DependentUpon>topicsel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="umc.resx">
+      <DependentUpon>umc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="votctrl.resx">
+      <DependentUpon>votctrl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="votego.resx">
+      <DependentUpon>votego.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="voting.resx">
+      <DependentUpon>voting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="welcome.resx">
+      <DependentUpon>welcome.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yield.resx">
+      <DependentUpon>yield.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="crashdump.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
